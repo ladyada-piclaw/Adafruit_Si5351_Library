@@ -94,6 +94,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa82bf7736672b707a4b4fee88c1646f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="errors_8h.html#a5edd7aad54ac059bf561cf2f92017698">err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i5351.html#aa82bf7736672b707a4b4fee88c1646f6">setupMultisynthInt</a> (uint8_t output, si5351PLL_t pllSource, si5351MultisynthDiv_t div)</td></tr>
 <tr class="memdesc:aa82bf7736672b707a4b4fee88c1646f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the Multisynth divider using integer output.  <a href="#aa82bf7736672b707a4b4fee88c1646f6">More...</a><br /></td></tr>
 <tr class="separator:aa82bf7736672b707a4b4fee88c1646f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83f961c598bf45ebfa7022a48cd20d7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="errors_8h.html#a5edd7aad54ac059bf561cf2f92017698">err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i5351.html#a83f961c598bf45ebfa7022a48cd20d7d">setupMultisynth6</a> (si5351PLL_t pllSource, uint8_t div)</td></tr>
+<tr class="memdesc:a83f961c598bf45ebfa7022a48cd20d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the integer-only Multisynth divider for CLK6.  <a href="#a83f961c598bf45ebfa7022a48cd20d7d">More...</a><br /></td></tr>
+<tr class="separator:a83f961c598bf45ebfa7022a48cd20d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab914a4c884c93788630b5690828fe00f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="errors_8h.html#a5edd7aad54ac059bf561cf2f92017698">err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i5351.html#ab914a4c884c93788630b5690828fe00f">setupMultisynth7</a> (si5351PLL_t pllSource, uint8_t div)</td></tr>
+<tr class="memdesc:ab914a4c884c93788630b5690828fe00f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the integer-only Multisynth divider for CLK7.  <a href="#ab914a4c884c93788630b5690828fe00f">More...</a><br /></td></tr>
+<tr class="separator:ab914a4c884c93788630b5690828fe00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a814f8b3e363f9cd6d1c9348157c1f5d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="errors_8h.html#a5edd7aad54ac059bf561cf2f92017698">err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i5351.html#a814f8b3e363f9cd6d1c9348157c1f5d6">enableSpreadSpectrum</a> (bool enabled)</td></tr>
 <tr class="memdesc:a814f8b3e363f9cd6d1c9348157c1f5d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables spread spectrum.  <a href="#a814f8b3e363f9cd6d1c9348157c1f5d6">More...</a><br /></td></tr>
 <tr class="separator:a814f8b3e363f9cd6d1c9348157c1f5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -102,6 +108,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a61b8afa0ac72529f8efbf7d4b2c2b66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63b092fb3d8f71d1c0f59716d4948a07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="errors_8h.html#a5edd7aad54ac059bf561cf2f92017698">err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i5351.html#a63b092fb3d8f71d1c0f59716d4948a07">setupRdiv</a> (uint8_t output, si5351RDiv_t div)</td></tr>
 <tr class="separator:a63b092fb3d8f71d1c0f59716d4948a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43eaf5845fa56034b4958a0339230a6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="errors_8h.html#a5edd7aad54ac059bf561cf2f92017698">err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i5351.html#a43eaf5845fa56034b4958a0339230a6c">setFrequency</a> (uint8_t output, si5351PLL_t pll, uint32_t freq)</td></tr>
+<tr class="memdesc:a43eaf5845fa56034b4958a0339230a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auto-compute and apply PLL/Multisynth/R-divider for a target output frequency.  <a href="#a43eaf5845fa56034b4958a0339230a6c">More...</a><br /></td></tr>
+<tr class="separator:a43eaf5845fa56034b4958a0339230a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SI5351 class. </p>
@@ -415,6 +424,93 @@ For frequencies below 500kHz (down to 8kHz) Rx_DIV must be used, but this isn't 
 
 </div>
 </div>
+<a id="a83f961c598bf45ebfa7022a48cd20d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83f961c598bf45ebfa7022a48cd20d7d">&#9670;&nbsp;</a></span>setupMultisynth6()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="errors_8h.html#a5edd7aad54ac059bf561cf2f92017698">err_t</a> Adafruit_SI5351::setupMultisynth6 </td>
+          <td>(</td>
+          <td class="paramtype">si5351PLL_t&#160;</td>
+          <td class="paramname"><em>pllSource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>div</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configures the integer-only Multisynth divider for CLK6. </p>
+<dl class="section return"><dt>Returns</dt><dd>ERROR_NONE</dd></dl>
+<p>Outputs 6 and 7 on the Si5351 are integer-only MultiSynths controlled by a single divider register each (regs 90/91), unlike CLK0..CLK5 which use the full 8-byte fractional parameter blocks.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pllSource</td><td>The PLL input source to use, which must be one of:<ul>
+<li>SI5351_PLL_A</li>
+<li>SI5351_PLL_B </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">div</td><td>Even integer divider in the range 6..254. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ERROR_NONE on success, otherwise an appropriate error code. </dd></dl>
+
+</div>
+</div>
+<a id="ab914a4c884c93788630b5690828fe00f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab914a4c884c93788630b5690828fe00f">&#9670;&nbsp;</a></span>setupMultisynth7()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="errors_8h.html#a5edd7aad54ac059bf561cf2f92017698">err_t</a> Adafruit_SI5351::setupMultisynth7 </td>
+          <td>(</td>
+          <td class="paramtype">si5351PLL_t&#160;</td>
+          <td class="paramname"><em>pllSource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>div</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configures the integer-only Multisynth divider for CLK7. </p>
+<dl class="section return"><dt>Returns</dt><dd>ERROR_NONE</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pllSource</td><td>The PLL input source to use, which must be one of:<ul>
+<li>SI5351_PLL_A</li>
+<li>SI5351_PLL_B </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">div</td><td>Even integer divider in the range 6..254. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ERROR_NONE on success, otherwise an appropriate error code. </dd></dl>
+
+</div>
+</div>
 <a id="a814f8b3e363f9cd6d1c9348157c1f5d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a814f8b3e363f9cd6d1c9348157c1f5d6">&#9670;&nbsp;</a></span>enableSpreadSpectrum()</h2>
 
@@ -502,6 +598,73 @@ For frequencies below 500kHz (down to 8kHz) Rx_DIV must be used, but this isn't 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ERROR_NONE </dd></dl>
+
+</div>
+</div>
+<a id="a43eaf5845fa56034b4958a0339230a6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43eaf5845fa56034b4958a0339230a6c">&#9670;&nbsp;</a></span>setFrequency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="errors_8h.html#a5edd7aad54ac059bf561cf2f92017698">err_t</a> Adafruit_SI5351::setFrequency </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">si5351PLL_t&#160;</td>
+          <td class="paramname"><em>pll</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>freq</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Auto-compute and apply PLL/Multisynth/R-divider for a target output frequency. </p>
+<p>Automatically computes and applies the PLL multiplier, Multisynth divider and R divider needed to generate a desired output frequency on a given channel, then configures the hardware. This is a convenience wrapper over <a class="el" href="class_adafruit___s_i5351.html#a41a4de34f331294d79fdcc8cc7090916" title="Sets the multiplier for the specified PLL. ">setupPLL()</a>, <a class="el" href="class_adafruit___s_i5351.html#a7a38f8de810f72408156ba68ee3c04c4" title="Configures the Multisynth divider, which determines the output clock frequency based on the specified...">setupMultisynth()</a> and <a class="el" href="class_adafruit___s_i5351.html#a63b092fb3d8f71d1c0f59716d4948a07">setupRdiv()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output</td><td>Channel to configure (0..2). </td></tr>
+    <tr><td class="paramname">pll</td><td>PLL to drive the output (SI5351_PLL_A or SI5351_PLL_B). </td></tr>
+    <tr><td class="paramname">freq</td><td>Desired output frequency in Hz (8000 .. 150000000). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ERROR_NONE on success, ERROR_INVALIDPARAMETER if unreachable.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output</td><td>The output channel to use (0..5). </td></tr>
+    <tr><td class="paramname">pll</td><td>The PLL to drive this output, either SI5351_PLL_A or SI5351_PLL_B. The caller selects the PLL; note that any other output already sharing this PLL will be retuned. </td></tr>
+    <tr><td class="paramname">freq</td><td>Desired output frequency in Hz (8000 .. 150000000).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ERROR_NONE on success, or ERROR_INVALIDPARAMETER if the requested frequency cannot be synthesised within the hardware limits.</dd></dl>
+<h1><a class="anchor" id="Algorithm"></a>
+Algorithm</h1>
+<p>The output is generated as: </p><pre class="fragment">fOUT = (fXTAL * (M)) / (D * R)
+</pre><p>where fXTAL is the 25 MHz reference, M = a + b/c is the fractional PLL feedback multiplier, D is the (integer) Multisynth divider and R is the output R divider (1..128). To keep output jitter low the fractional part is placed entirely on the PLL while the Multisynth runs in integer mode.</p>
+<p>The solver:</p><ol type="1">
+<li>Applies the R divider (doubling until the pre-R frequency is at least 600 kHz) so low frequencies stay within Multisynth range.</li>
+<li>Chooses the largest even Multisynth divider D that keeps the VCO within its 600..900 MHz lock range.</li>
+<li>Computes the fractional PLL multiplier M to hit the VCO target, using a denominator of 1048575 for maximum resolution.</li>
+</ol>
+<dl class="section note"><dt>Note</dt><dd>Frequencies above 150 MHz require the DIVBY4 path and are not yet supported; they return ERROR_INVALIDPARAMETER.</dd>
+<dd>
+The output is left enabled/disabled exactly as it was; call <a class="el" href="class_adafruit___s_i5351.html#a61b8afa0ac72529f8efbf7d4b2c2b66d" title="Enables or disables all clock outputs. ">enableOutputs()</a> as needed. </dd></dl>
 
 </div>
 </div>
